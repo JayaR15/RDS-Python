@@ -18,6 +18,7 @@ def index():
     if request.method == "POST":
         details = request.form
         Name = details['Name']
+        logging.Info(Name)
         Number = details['Number']
         Age = details['Age']
         Location = details['Location']
